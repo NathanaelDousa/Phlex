@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # nathanaeldousa README
 
 This is the README for your extension "nathanaeldousa". After writing up a brief description, we recommend including the following sections.
@@ -69,3 +70,7 @@ You can author your README using Visual Studio Code. Here are some useful editor
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+=======
+# Phlex
+Phlex is a PHP assistant tool leveraging AI to streamline coding, improve productivity, and enhance code quality.
+>>>>>>> 2a04da65052afe9c2ab1736bd2500e835b9183d6

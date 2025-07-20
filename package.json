@@ -14,15 +14,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "php-code-analyzer.askAI",
-        "title": "Phlex: Ask AI"
+        "command": "phplex.scan",
+        "title": "phplex scan"
+      },
+      {
+        "command": "phplex.createMvc",
+        "title": "phplex create mvc"
       }
-    ],
-    "activationEvents": [
-      "onCommand:php-code-analyzer.askAI",
-      "onLanguage:php"
     ]
   },
+  "activationEvents": [
+    "onCommand:php-code-analyzer.askAI",
+    "onLanguage:php",
+    "workspaceContains:**/*.php"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "npm run check-types && npm run lint && node esbuild.js",

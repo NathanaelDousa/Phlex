@@ -20,6 +20,10 @@
       {
         "command": "phplex.createMvc",
         "title": "phplex create mvc"
+      },
+            {
+        "command": "phplex.createSingleton",
+        "title": "phplex create singleton"
       }
     ]
   },

@@ -1,0 +1,16 @@
+Verplichte packages:
+vscode
+Nodig voor toegang tot de VS Code API.
+npm install --save-dev @types/vscode
+npm install --save vscode
+typescript
+
+Voor TypeScript compilatie.
+npm install --save-dev typescript
+@types/node
+
+Voor Node.js types (nodig voor fs, path, enz.).
+npm install --save-dev @types/node
+
+ts-node (optioneel voor development-run zonder build)
+npm install --save-dev ts-node

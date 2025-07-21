@@ -7,6 +7,7 @@ import { runOllama, sanitizeMarkdown } from './utils/aiUtils';
 import { createMvcCommand } from './commands/createMvc';
 import { registerAiScanCommand } from './commands/scanCode';
 import { createSingletonCommand } from './commands/createSingleton';
+import { createServiceCommand } from './commands/createService';
 
 
 
@@ -51,7 +52,7 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(registerAiScanCommand());
     context.subscriptions.push(createMvcCommand());
     context.subscriptions.push(createSingletonCommand());
-
+    context.subscriptions.push(createServiceCommand());
 
 
     context.subscriptions.push(

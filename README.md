@@ -1,4 +1,4 @@
-![phplex-small](https://github.com/user-attachments/assets/0d315e3a-f354-4c3f-bcc9-894a16ee624c)
+![phplex](https://github.com/user-attachments/assets/af6d9f8b-1362-410f-ac58-682bb4535575)
 
 **PHPlex** is a powerful Visual Studio Code extension that brings artificial intelligence into your PHP development workflow. Whether you're modernizing legacy code, generating documentation, or improving readability — PHPlex helps you code faster, cleaner, and smarter.
 

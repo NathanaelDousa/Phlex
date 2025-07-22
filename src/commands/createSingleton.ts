@@ -4,13 +4,13 @@ import * as fs from 'fs';
 
 async function createSingleton() {
     const className = await vscode.window.showInputBox({
-        prompt: 'Voer de naam van de Singleton-klasse in',
-        placeHolder: 'Bijv. DatabaseConnection',
-        validateInput: text => text.trim() === '' ? 'Klassenaam is vereist' : null
+        prompt: 'Enter the name of the Singleton class',
+        placeHolder: 'For example, DatabaseConnection',
+        validateInput: text => text.trim() === '' ? 'Class name is required' : null
     });
 
     if (!className) {
-        vscode.window.showWarningMessage('Aanmaak geannuleerd: geen klassenaam opgegeven.');
+        vscode.window.showWarningMessage('Creation canceled: no class name provided.');
         return;
     }
 
@@ -37,7 +37,7 @@ class ${className} {
 
     const workspaceFolders = vscode.workspace.workspaceFolders;
     if (!workspaceFolders) {
-        vscode.window.showErrorMessage('Geen actieve workspacefolder gevonden.');
+        vscode.window.showErrorMessage('No active workspace folder found.');
         return;
     }
 
@@ -46,15 +46,15 @@ class ${className} {
     const filePath = path.join(folderPath, fileName);
 
     if (fs.existsSync(filePath)) {
-        vscode.window.showErrorMessage(`Bestand ${fileName} bestaat al.`);
+        vscode.window.showErrorMessage(`File ${fileName} already exists.`);
         return;
     }
 
     fs.writeFile(filePath, singletonTemplate, err => {
         if (err) {
-            vscode.window.showErrorMessage(`Fout bij het aanmaken van bestand: ${err.message}`);
+            vscode.window.showErrorMessage(`Error creating file: ${err.message}`);
         } else {
-            vscode.window.showInformationMessage(`Singleton-klasse ${className} is aangemaakt.`);
+            vscode.window.showInformationMessage(`Singleton class ${className} is created.`);
             vscode.workspace.openTextDocument(filePath).then(doc => {
                 vscode.window.showTextDocument(doc);
             });

@@ -1,7 +1,7 @@
 {
   "name": "nathanaeldousa",
-  "displayName": "PHlex",
-  "description": "Phlex is a PHP assistant tool leveraging AI to streamline coding, improve productivity, and enhance code quality.",
+  "displayName": "Phplex",
+  "description": "Phplex is a PHP assistant tool leveraging AI to streamline coding, improve productivity, and enhance code quality.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.102.0"
@@ -28,7 +28,20 @@
       {
         "command": "phplex.createService",
         "title": "phplex create service"
+      },
+      {
+        "command": "phplex.createApiEndpoint",
+        "title": "phplex create API endpoint"
+      },
+      {
+        "command": "phplex.convertToOOP",
+        "title": "phplex convert to oop"
+      },
+      {
+        "command": "phplex.commentCode",
+        "title": "phplex comment code" 
       }
+
     ]
   },
   "activationEvents": [

@@ -15,12 +15,12 @@ async function createService() {
     }
 
     const wantsInterface = await vscode.window.showQuickPick(['Ja', 'Nee'], {
-        placeHolder: 'Wil je ook een interface genereren voor deze service?'
+        placeHolder: 'Would you like a interface generated for this service?'
     });
 
     const dependency = await vscode.window.showInputBox({
-        prompt: 'Optioneel: Welke dependency wil je injecteren in de constructor? (bijv. UserRepository)',
-        placeHolder: 'Laat leeg als je geen dependency wil'
+        prompt: 'Optional: Which dependency would you like to inject in the constructor? (example: UserRepository)',
+        placeHolder: "Leave it empty if you don't want a dependency"
     });
 
     const className = serviceName;
@@ -60,12 +60,12 @@ interface ${interfaceName} {
 
     const classFilePath = path.join(folderPath, `${className}.php`);
     if (fs.existsSync(classFilePath)) {
-        vscode.window.showErrorMessage(`Bestand ${className}.php bestaat al.`);
+        vscode.window.showErrorMessage(`File ${className}.php already exists.`);
         return;
     }
 
     fs.writeFileSync(classFilePath, serviceTemplate);
-    vscode.window.showInformationMessage(`Serviceklasse ${className}.php is aangemaakt.`);
+    vscode.window.showInformationMessage(`Serviceclass ${className}.php is created.`);
     vscode.workspace.openTextDocument(classFilePath).then(doc => {
         vscode.window.showTextDocument(doc);
     });
@@ -74,7 +74,7 @@ interface ${interfaceName} {
         const interfaceFilePath = path.join(folderPath, `${interfaceName}.php`);
         if (!fs.existsSync(interfaceFilePath)) {
             fs.writeFileSync(interfaceFilePath, interfaceTemplate);
-            vscode.window.showInformationMessage(`Interfacebestand ${interfaceName}.php is aangemaakt.`);
+            vscode.window.showInformationMessage(`Interfacefile ${interfaceName}.php is created.`);
         }
     }
 }

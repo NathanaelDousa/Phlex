@@ -8,7 +8,9 @@ import { createMvcCommand } from './commands/createMvc';
 import { registerAiScanCommand } from './commands/scanCode';
 import { createSingletonCommand } from './commands/createSingleton';
 import { createServiceCommand } from './commands/createService';
-
+import { createApiEndpointCommand } from './commands/createApiEndpoint';
+import { convertToOOPCommand } from './commands/convertToOOP';
+import { commentCodeCommand } from './commands/commentCode';
 
 
 type PHPNode = {
@@ -53,6 +55,9 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(createMvcCommand());
     context.subscriptions.push(createSingletonCommand());
     context.subscriptions.push(createServiceCommand());
+    context.subscriptions.push(createApiEndpointCommand());
+    context.subscriptions.push(convertToOOPCommand());
+    context.subscriptions.push(commentCodeCommand());
 
 
     context.subscriptions.push(

@@ -1,76 +1,107 @@
-<<<<<<< HEAD
-# nathanaeldousa README
+# 🧠 PHPlex - AI-Powered PHP Tools for VS Code
 
-This is the README for your extension "nathanaeldousa". After writing up a brief description, we recommend including the following sections.
+**PHPlex** is a powerful Visual Studio Code extension that brings artificial intelligence into your PHP development workflow. Whether you're modernizing legacy code, generating documentation, or improving readability — PHPlex helps you code faster, cleaner, and smarter.
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Powered by [Ollama](https://ollama.com) and LLaMA 3.
 
 ---
 
-## Following extension guidelines
+## ⚡ Quick Start
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+1. Install [Ollama](https://ollama.com) locally and verify `ollama run llama3` works in your terminal.
+2. Open your PHP project in VS Code.
+3. Install this extension.
+4. Open any `.php` file.
+5. Launch one of the smart commands from the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+---
 
-## Working with Markdown
+## 🛠 Available Commands
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+| Command Name                             | Description                                                   |
+|------------------------------------------|---------------------------------------------------------------|
+| `PHPlex: Scan file with AI`              | Analyzes the current file and provides smart AI suggestions   |
+| `PHPlex: Add inline comments`            | Automatically adds meaningful comments to functions and classes |
+| `PHPlex: Convert to OOP`                 | Refactors procedural code into object-oriented PHP            |
+| `PHPlex: Generate file documentation`    | Creates clean Markdown docs based on the current PHP file     |
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+---
 
-## For more information
+## 📄 Feature Breakdown
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+### ✅ `Scan file with AI`
 
-**Enjoy!**
-=======
-# Phlex
-Phlex is a PHP assistant tool leveraging AI to streamline coding, improve productivity, and enhance code quality.
->>>>>>> 2a04da65052afe9c2ab1736bd2500e835b9183d6
+Uses LLaMA 3 to analyze your code and suggest improvements, including:
+- Code quality enhancements
+- Architectural suggestions
+- Security tips
+- Best practices
+
+Output is shown in the **AI PHP Scanner** output tab.
+
+---
+
+### 💬 `Add inline comments`
+
+Adds descriptive inline comments to your PHP code using AI:
+- Great for onboarding and team collaboration
+- Helps document complex functions
+- Promotes consistent commenting style
+
+---
+
+### 🧱 `Convert to OOP`
+
+Transforms legacy or procedural PHP into modern, object-oriented code:
+- Wraps logic into classes
+- Converts functions to methods
+- Automatically generates constructors, properties, and more
+
+Perfect for modernization and refactoring efforts.
+
+---
+
+### 📘 `Generate file documentation`
+
+Creates a detailed Markdown documentation file from your current PHP file:
+- File summary
+- Class descriptions
+- Method breakdowns with parameters, return types
+- Example usages
+
+The documentation is saved to `/docs/[filename].md` and auto-opened.
+
+---
+
+## 📦 Requirements
+
+- ✅ Supports `.php` files only
+- ✅ Requires a local [Ollama](https://ollama.com) instance with the `llama3` model
+- ✅ Must be run inside a VS Code **workspace**
+
+---
+
+## 🚀 Roadmap
+
+- [ ] Analyze multiple files at once
+- [ ] Choose from multiple AI models (Mistral, CodeLlama, etc.)
+- [ ] Built-in chat assistant (sidebar UI)
+- [ ] Right-click context menu support
+
+---
+
+## ❤️ Contribute
+
+Contributions are welcome! Feel free to submit issues, ideas, or pull requests. This is an actively evolving project.
+
+---
+
+## 🧠 Powered By
+
+- [Ollama](https://ollama.com)
+- [Meta LLaMA 3](https://ai.meta.com/llama/)
+- [VS Code Extension API](https://code.visualstudio.com/api)
+
+---
+
+**PHPlex – Building smarter PHP, one AI command at a time.**

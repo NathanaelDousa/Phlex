@@ -1,5 +1,4 @@
-![Phplex](https://github.com/user-attachments/assets/96db791a-34a0-47a8-8ade-504cb1c9c02c)
-![Phplex](https://github.com/user-attachments/assets/2b83d910-9403-4e0b-96c0-42ee6137c43d)
+![phplex-small](https://github.com/user-attachments/assets/0d315e3a-f354-4c3f-bcc9-894a16ee624c)
 
 **PHPlex** is a powerful Visual Studio Code extension that brings artificial intelligence into your PHP development workflow. Whether you're modernizing legacy code, generating documentation, or improving readability — PHPlex helps you code faster, cleaner, and smarter.
 
@@ -33,7 +32,7 @@ Powered by [Ollama](https://ollama.com) and LLaMA 3.
 
 ---
 
-## 📄 Command Details
+##  Command Details
 
 ### `phplex scan`  
 This command analyzes your current PHP file using advanced AI models. It detects bugs, potential vulnerabilities, and code smells while suggesting precise improvements to optimize performance and code quality.
@@ -61,7 +60,7 @@ Automatically scaffold a fully functional RESTful API endpoint. This command inc
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 - ✅ Supports `.php` files only
 - ✅ Requires a local [Ollama](https://ollama.com) instance with the `llama3` model
@@ -69,7 +68,7 @@ Automatically scaffold a fully functional RESTful API endpoint. This command inc
 
 ---
 
-## 🚀 Roadmap
+##  Roadmap
 
 - [x] Analyze multiple files at once
 - [x] Add hotkeys for commands
@@ -84,7 +83,7 @@ Contributions are welcome! Feel free to submit issues, ideas, or pull requests. 
 
 ---
 
-## 🧠 Powered By
+##  Powered By
 
 - [Ollama](https://ollama.com)
 - [VS Code Extension API](https://code.visualstudio.com/api)

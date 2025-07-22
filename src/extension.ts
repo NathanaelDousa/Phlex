@@ -11,6 +11,7 @@ import { createServiceCommand } from './commands/createService';
 import { createApiEndpointCommand } from './commands/createApiEndpoint';
 import { convertToOOPCommand } from './commands/convertToOOP';
 import { commentCodeCommand } from './commands/commentCode';
+import { registerDocumentationCommand } from './commands/createDocumentation';
 
 
 type PHPNode = {
@@ -58,6 +59,7 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(createApiEndpointCommand());
     context.subscriptions.push(convertToOOPCommand());
     context.subscriptions.push(commentCodeCommand());
+    context.subscriptions.push(registerDocumentationCommand());
 
 
     context.subscriptions.push(

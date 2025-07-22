@@ -40,6 +40,10 @@
       {
         "command": "phplex.commentCode",
         "title": "phplex comment code" 
+      },
+      {
+        "command": "phplex.generateDocumentation",
+        "title": "phplex generate documenation" 
       }
 
     ]

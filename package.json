@@ -39,7 +39,7 @@
       },
       {
         "command": "phplex.commentCode",
-        "title": "phplex comment code" 
+        "title": "phplex comment code"
       },
       {
         "command": "phplex.generateDocumentation",
@@ -48,8 +48,11 @@
       {
         "command": "phplex.detectLegacy",
         "title": "phplex detect legacy" 
+      },
+      {
+        "command": "phplex.optimizeCode",
+        "title": "Phplex: Optimize PHP Code"
       }
-
     ]
   },
   "activationEvents": [

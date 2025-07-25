@@ -44,6 +44,10 @@
       {
         "command": "phplex.generateDocumentation",
         "title": "phplex generate documenation" 
+      },
+      {
+        "command": "phplex.detectLegacy",
+        "title": "phplex detect legacy" 
       }
 
     ]

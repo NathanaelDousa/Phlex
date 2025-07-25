@@ -39,13 +39,16 @@
       },
       {
         "command": "phplex.commentCode",
-        "title": "phplex comment code" 
+        "title": "phplex comment code"
       },
       {
         "command": "phplex.generateDocumentation",
-        "title": "phplex generate documenation" 
+        "title": "phplex generate documenation"
+      },
+      {
+        "command": "phplex.optimizeCode",
+        "title": "Phplex: Optimize PHP Code"
       }
-
     ]
   },
   "activationEvents": [
